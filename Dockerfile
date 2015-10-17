@@ -8,7 +8,7 @@ RUN yum install deltarpm yum-utils -y && yum update -y && yum install httpd -y &
 
 ADD index.html /var/www/html/index.html
 
-EXPOSE 80
+EXPOSE 8080
 
 RUN chmod -R 755 /run/httpd
 USER 1001
