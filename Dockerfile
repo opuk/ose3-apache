@@ -1,10 +1,10 @@
 # A simple apache container, based on fedora
 
-FROM fedora
+FROM rhel
 
 MAINTAINER Johan Swensson <kupo at kupo dot se>
 
-RUN dnf install deltarpm yum-utils -y && dnf update -y && dnf install httpd -y && dnf clean all
+RUN yum install deltarpm yum-utils -y && yum update -y && yum install httpd -y && yum clean all
 
 ADD index.html /var/www/html/index.html
 
