@@ -1,5 +1,3 @@
-# A simple apache container, based on fedora
-
 FROM rhel
 
 MAINTAINER Johan Swensson <kupo at kupo dot se>
